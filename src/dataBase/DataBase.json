@@ -1,0 +1,14 @@
+{
+  "notice": [
+    {
+      "string1": "Aquí va la primera parte de la noticia"
+    },
+    {
+      "string2": "Aquí va la segunda parte de la noticia"
+    },
+    {
+      "string3": "Aquí va la tercera parte de la noticia"
+    }
+  ],
+  "string0": "Tipo de noticia"
+}

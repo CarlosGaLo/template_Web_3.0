@@ -1,0 +1,50 @@
+[
+      {
+        "id": 0,
+        "tittle": "El señor de los anillos",
+        "img": "https://pbs.twimg.com/media/FKrnBo8UYAsiKE5?format=jpg&name=4096x4096",
+        "imgAlt": "Imagen de la mano de Sauron",
+        "date": 3,
+        "resume": "Si no conoces El Señor de los Anillos te envidio, ojalá poder volver a ver sus películas y leer sus libros por primera vez. Ahora tendrás la oportunidad de verlo, como por primera vez, en amazon prime vídeo con la nueva serie de 'Los anillos de Poder'"
+      },
+      {
+        "id": 1,
+        "tittle": "Mundo disco",
+        "img": "https://fancueva.com/wp-content/uploads/2008/07/LaMuerte.jpg",
+        "imgAlt": "Imagen de mundo disco",
+        "date": 5,
+        "resume": "La muerte está cansada de su trabajo y se toma un tiempo para descansar. En este texto del genial Terry Pratchett encontrarás humor, filosofía y... ¡muerte!"
+      },
+      {
+        "id": 2,
+        "tittle": "Mundos de fantasía",
+        "img": "https://conceptodefinicion.de/wp-content/uploads/2016/03/Fantas%C3%ADa.jpg",
+        "imgAlt": "Imagen de fantasía",
+        "date": 12,
+        "resume": "Es la imaginación la que lleva el timón de la humanidad, no puedes desear, estudiar ni usar lo que no puedes imaginar.\n Entra a un mundo de fantasía."
+      },
+      {
+        "id": 3,
+        "tittle": "Star Wars",
+        "img": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/6c/Star_Wars_Logo.svg/640px-Star_Wars_Logo.svg.png",
+        "imgAlt": "Logo Star Wars",
+        "date": 22,
+        "resume": "¿Cuáles son los nuevos proyectos de esta famosa saga?"
+      },
+      {
+        "id": 4,
+        "tittle": "Dragones y Mazmorras",
+        "img": "https://www.mubis.es/media/users/12828/200523/os-gustaria-dragones-y-mazmorras-con-estos-protagonistas-original.jpg",
+        "imgAlt": "Imagen de Dragones y Mazmorras",
+        "date": 32,
+        "resume": "La nueva película de Dragones y Mazmorras ya está aquí."
+      },
+      {
+        "id": 5,
+        "tittle": "Horizon Zero Dawn",
+        "img": "https://as01.epimg.net/meristation/imagenes/2021/04/30/reportajes/1619796973_447918_1619803366_noticia_normal.jpg",
+        "imgAlt": "Imagen de Horizon Zero Dawn",
+        "date": 54,
+        "resume": "Han pasado 5 años desde el estreno de la mejor historia de ciencia-ficción del mundo de los videojuegos. ¿Quieres saber qué hace a este juego único en diseño, narrativa y jugabilidad?"
+      }      
+]

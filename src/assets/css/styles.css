@@ -1,0 +1,488 @@
+body {
+  text-align: center;
+  margin: 0px;
+  padding: 0px;
+
+  /*Fonts*/
+  font-family: "Segoe UI", Roboto, Oxygen, Ubunto, Cantarell, "Open Sans",
+    "Helvet";
+  -webkit-font-smoothing: antialiased;
+  -moz-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: antialiased;
+}
+
+#header {
+  height: 120px;
+  width: 100%;
+  background: white;
+  border-bottom: 1px solid #ccc;
+  border-top: 5px solid black;
+}
+
+#logo {
+  width: 30%;
+  font-size: 30px;
+  float: left;
+  margin-top: 35px;
+}
+
+#logo img {
+  display: block;
+  float: left;
+  height: 99px;
+  margin-top: -27px;
+  margin-right: 10px;
+  animation: giro infinite 20s linear;
+}
+
+@keyframes giro {
+  /* recuerda que también funciona si pones los porcentajes del keyframe! Solo hay que poner 10%{código} y CSS hará el resto */
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+#brand {
+  display: block;
+  margin: 0;
+  float: left;
+  padding-top: 8px;
+  text-decoration: none;
+}
+
+.center {
+  width: 75%;
+  margin: 0px auto;
+}
+
+#menu {
+  width: 70%;
+  float: right;
+  font-size: 24px;
+}
+
+#menu ul {
+  line-height: 85px;
+  width: 60%;
+  float: right;
+}
+
+#menu ul li {
+  display: inline-block;
+  list-style: none;
+  height: 46px;
+  margin-left: 15px;
+  margin-right: 15px;
+}
+
+#menu a {
+  text-decoration: none;
+  color: blue;
+  transition: 300ms all;
+}
+
+#menu a:hover {
+  color: red;
+}
+/* Aquí estamos modificando el active del router-link. RECUERDA que debes acceder con el mismo orden de prioridad, si accedes solo por .active, se aplicará el #menu a:hover porque ese selector es id+class, por lo tanto debemos usar un selector de igual tamaño o más.*/
+/*Recuerda también que por lo pronto solo estamos aplicando esto al router de rol. ¡Fíjate en la diferencia con el resto de enlaces!*/
+#menu .active {
+  color: rgb(170, 207, 170);
+}
+
+/* El clear fix es el equivalente a hacer un <br /> pero en css. Es una buena práctica para mantener módulos separados en la maquetación */
+.clearfix {
+  clear: both;
+  float: none;
+}
+
+/* Hasta aquí el navbar */
+
+/*Viene el Great Block*/
+#slider {
+  width: 100%;
+  background: rgb(255, 255, 255);
+  background: rgb(255, 255, 255);
+  background: radial-gradient(
+    circle,
+    rgba(255, 255, 255, 1) 0%,
+    rgba(143, 255, 252, 1) 27%,
+    rgba(115, 245, 255, 1) 100%
+  );
+  line-height: 120px;
+  color: black;
+  text-shadow: 3px 6px 70px #ff00ff;
+}
+/* Vamos a usar el important para modificar un elemento de css. Usamos el important porque sabemos que SIEMPRE que esta clase aparezca debe tener la MÁXIMA prioridad. En otro caso, jamás usaríamos el important. */
+.force_reduce_slider {
+  height: 8px;
+}
+.force_reduce_slider h2 {
+  display: none;
+}
+.force_reduce_slider a {
+  display: none;
+}
+/*Aunque en este caso el important no era obligatorio, quería que lo vieramos. Esta línea de código lo que hace es, básicamente, reducir enormemente el tamaño del slider para que solo se mantenga grande cuando estemos en las páginas principales.*/
+
+#slider h2 {
+  margin-top: 0.2px;
+  padding: 0;
+  padding-top: 138px;
+  text-align: center;
+  font-size: 52px;
+}
+
+.btn-dark {
+  color: black;
+  background: rgb(230, 247, 252);
+  padding: 10px;
+  width: 100px;
+  height: 30px;
+  margin: 0 auto;
+  border: 2px solid black;
+  border-radius: 50px;
+  font-size: 18px;
+  text-transform: uppercase;
+  text-shadow: none;
+  text-decoration: none;
+}
+
+.btn-dark:hover {
+  background: rgb(39, 38, 38);
+  color: white;
+}
+
+.article-title {
+  margin-bottom: 50px;
+}
+
+#content {
+  width: 75%;
+  float: right;
+  border: 1px solid #393838;
+  min-height: 900px;
+}
+
+#sidebar {
+  width: 20%;
+  float: left;
+  /* Activa el border si quieres ver esta caja! */
+  /* border: 1px solid green; */
+}
+
+.sidebar-item {
+  background: #f3f0f0;
+  padding: 15px;
+  margin-top: 30px;
+}
+
+.sidebar-item h3 {
+  font-size: 15px;
+  margin: 0;
+  padding-bottom: 10px;
+  margin-bottom: 10px;
+  border-bottom: 3px solid #ccc;
+}
+
+.btn {
+  background-color: rgb(97, 235, 228);
+  color: black;
+  padding: 8px;
+  font-weight: bold;
+  text-transform: uppercase;
+  font-size: 14px;
+  text-decoration: none;
+  border-radius: 10px;
+  transition: 200ms all;
+  border: none;
+  cursor: pointer;
+}
+
+.btn:hover {
+  background-color: #444;
+  color: white;
+}
+
+input[type="text"] {
+  width: 100%;
+  height: 30px;
+  border: 1px solid #ccc;
+  padding: 2px;
+  margin-bottom: 8px;
+  transition: 100ms all;
+}
+
+/* Si el elemento tiene el puntero encima, se activa esto */
+input[type="text"]:hover {
+  border: 2px solid rgb(179, 179, 179);
+  padding: 3px;
+}
+/* Si se hace click sobre el elemento, se activa esto */
+input[type="text"]:active {
+  border: 2px solid rgb(179, 179, 179);
+  padding: 3px;
+}
+/* Mientras el elemento esté activado sucederá esto */
+input[type="text"]:focus {
+  border: 1px solid rgb(179, 179, 179);
+  padding: 3px;
+  box-shadow: 0 0 5px #444 inset;
+}
+
+#footer {
+  background: black;
+  color: white;
+  width: 100%;
+  height: 30px;
+  line-height: 35px;
+}
+
+#footer p {
+  margin: 0;
+  padding: 0;
+}
+
+.article-item {
+  width: 100%;
+  border-bottom: 1px solid #eee;
+  padding-bottom: 20px;
+  padding-top: 20px;
+  text-align: left;
+}
+
+.article-item .image-wrap {
+  /* Si queremos imágenes que no siempre tengan la misma proporción este text-align nos las centrará. Si hacemos que las imágenes entren en su marco, no hará nada. */
+  text-align: center;
+  width: 130px;
+  height: 130px;
+  overflow: hidden;
+  float: left;
+  margin-right: 15px;
+}
+
+.article-item .image-wrap img {
+  /* ¡Recuerda que el text-align no sirve solo para texto! Su nombre es contra-intuitivo */
+  text-align: center;
+  height: 100%;
+  /* Si añadimos la línea de abajo se forzaría a la imagen a que mida 130x130 px, incluso si para ello tiene que deformarla. Podríamos usar object-fit para encontrar otras soluciones */
+  width: 100%;
+}
+
+.article-item h2 {
+  display: block;
+  width: 100%;
+  padding: 0;
+  margin: 0;
+  margin-bottom: 7px;
+}
+
+.article-item .date {
+  display: block;
+  width: 100%;
+  color: #444;
+  font-size: 10px;
+}
+
+.article-item a {
+  display: blocK;
+  color: #444;
+  text-decoration: none;
+  margin-top: 10px;
+}
+
+.article-item a:hover {
+  text-decoration: underline;
+}
+
+.subheader {
+  font-size: 40px;
+  border-bottom: 1px solid #333;
+  padding-bottom: 10px;
+}
+
+.aside-text {
+  /* Aunque hay mejores maneras de colocar este texto, no vamos a pedir la oportunidad de usar un position:relative */
+  position: relative;
+  top: -75px;
+  text-align: justify;
+  float: right;
+  width: 60%;
+  height: 100%;
+}
+
+/* Responsive */
+/* Desde el pixel 0 hasta el 1795 */
+@media (max-width: 1795px) {
+  .center {
+    width: 85%;
+  }
+  #menu ul {
+    width: auto;
+  }
+}
+
+/* Desde el pixel 0 hasta el 1314, sobreescribiendo lo que dice arriba porque estamos en CSS y CSS funciona así. La ventaja de trabajar así es que, si en los niveles inferiores
+no sobreescribo nada, los códigos de niveles superiores se siguen aplicando.*/
+@media (max-width: 1488px) {
+  .center {
+    width: 95%;
+  }
+
+  #nav-blog h3 {
+    text-align: end;
+  }
+  #nav-blog h3 {
+    display: block;
+    width: 100%;
+    text-align: center;
+  }
+}
+
+@media (max-width: 1148px) {
+  .aside-text {
+    width: 40%;
+    max-height: 72px;
+    overflow: scroll;
+  }
+
+  #logo {
+    width: 37%;
+  }
+
+  #menu {
+    width: 63%;
+  }
+
+  #menu ul li a {
+    font-size: 16px;
+  }
+}
+
+@media (max-width: 797px) {
+  #logo {
+    float: none;
+    margin: 0px;
+    margin-top: 40px;
+  }
+  #logo img {
+    width: 80px;
+    height: 80px;
+  }
+  #menu ul {
+    clear: both;
+    float: none;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    line-height: 43px;
+  }
+
+  #content {
+    float: none;
+    width: 100%;
+  }
+
+  #sidebar {
+    float: none;
+    width: 60%;
+    margin: 0px auto;
+    margin-bottom: 50px;
+  }
+
+  #slider h2 {
+    padding-top: 115px;
+    font-size: 25px;
+  }
+  #nav-blog h3 {
+    text-align: end;
+  }
+}
+
+@media (max-width: 720px) {
+  /* Aquí deberíamos hacer un burguer menu, pero ahora mismo simplemente ocultamos aquello que se salga de la pantalla. Ya arreglaremos esto. */
+  #logo img {
+    display: none;
+  }
+  #header {
+    min-height: 130px;
+    overflow: hidden;
+  }
+  #menu,
+  #menu ul {
+    line-height: 50px;
+  }
+  #menu ul li {
+    margin-left: 7px;
+    margin-right: 7px;
+  }
+  #slider {
+    height: 225px;
+  }
+  #slider h2 {
+    font-size: 19px;
+    padding-top: 30px;
+  }
+  #slider .btn-dark {
+    /* En lugar de subir el botón hasta que entre en el slider, lo que hacemos es superponer el botón de Ir a la Wiki con la cabecera de Wikis y Noticias y así queda muy estético
+    Prueba a mover el height de aquí y el height de #slider para ver cómo varía la composición de la que estamos hablando. */
+    height: 100px;
+    border: 1px solid black;
+  }
+  #slider.slider-small {
+    height: 100px;
+  }
+}
+
+@media (max-width: 580px) {
+  #menu {
+    /* Aquí quitamos el menú, aunque deberíamos poner una hamburgesa en su lugar. */
+    display: none;
+  }
+
+  #brand {
+    display: block;
+    width: 100vw;
+    text-align: center;
+  }
+  .aside-text {
+    display: none;
+  }
+}
+
+@media (max-width: 332px) {
+  .subheader {
+    font-size: 18px;
+    padding-top: 10px;
+  }
+
+  #nav-blog h3 {
+    text-align: center;
+  }
+  #slider h2 {
+    display: none;
+  }
+
+  #slider {
+    height: 120px;
+  }
+
+  .btn,
+  btn-success {
+    font-size: 8px;
+  }
+
+  .article-item a {
+    display: block;
+    margin-top: 40px;
+    width: 100%;
+    min-width: 100%;
+    height: 20px;
+    border-bottom: 3px solid black;
+    text-align: center;
+    color: blue;
+  }
+}
