@@ -4,6 +4,7 @@
     <GreatBlockVue></GreatBlockVue>
     <router-view></router-view>
     <FooterBar></FooterBar>
+    <ArticleWikiLocal></ArticleWikiLocal>
   </div>
 </template>
 
@@ -13,6 +14,7 @@ import GreatBlockVue from "./components/GreatBlock.vue";
 import AsideBar from "./components/AsideBar.vue";
 import FooterBar from "./components/FooterBar.vue";
 import SearchBar from "./components/SearchBar.vue";
+import ArticleWikiLocal from "./components/ArticleWikiLocal.vue";
 
 export default {
   components: {
@@ -20,6 +22,7 @@ export default {
     GreatBlockVue: GreatBlockVue,
     AsideBar: AsideBar,
     FooterBar: FooterBar,
+    ArticleWikiLocal: ArticleWikiLocal,
   },
 };
 </script>
